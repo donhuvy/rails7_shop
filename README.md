@@ -1,24 +1,7 @@
-# README
+```bash
+rails destroy model Product
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+rails generate scaffold product product_name:string product_type:boolean size_width:decimal size_height:decimal size_length:decimal unit_of_size:string manufactured_date:date experied_date:date brand_id:integer color:string sku:string
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+gem 'bootstrap', '~> 5.3.3'
+```

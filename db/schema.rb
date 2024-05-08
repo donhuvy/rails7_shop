@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_05_08_072416) do
+ActiveRecord::Schema[7.1].define(version: 2024_05_08_094154) do
+  create_table "brands", force: :cascade do |t|
+    t.string "brand_name"
+    t.string "company_name"
+    t.integer "start_year"
+    t.integer "end_year"
+    t.string "origin_country"
+    t.string "domestic_country"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "employees", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
@@ -38,13 +49,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_08_072416) do
     t.integer "brand_id"
     t.string "color"
     t.string "sku"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "products_vy", primary_key: "vy_id", force: :cascade do |t|
-    t.string "name"
-    t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
