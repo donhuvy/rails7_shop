@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'home/index'
   resources :brands
   resources :products
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -9,7 +10,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  scope "/:locale" do
-      resources :products
-  end
+  root "home#index"
 end

@@ -5,3 +5,5 @@ rails generate scaffold product product_name:string product_type:boolean size_wi
 
 gem 'bootstrap', '~> 5.3.3'
 ```
+
+Go to http://localhost:3000/brands/1.json to get seed data.
