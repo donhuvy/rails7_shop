@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  product_name: MyString
+  product_type: false
+  size_width: 9.99
+  size_height: 9.99
+  size_length: 9.99
+  unit_of_size: MyString
+  manufactured_date: 2024-05-08
+  experied_date: 2024-05-08
+  brand_id: 1
+  color: MyString
+  sku: MyString
+
+two:
+  product_name: MyString
+  product_type: false
+  size_width: 9.99
+  size_height: 9.99
+  size_length: 9.99
+  unit_of_size: MyString
+  manufactured_date: 2024-05-08
+  experied_date: 2024-05-08
+  brand_id: 1
+  color: MyString
+  sku: MyString
