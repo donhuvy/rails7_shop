@@ -4,5 +4,5 @@ class Appuser < ApplicationRecord
     devise :database_authenticatable, :registerable,
            :recoverable, :rememberable, :validatable
 
-    before_action :authenticate_user!
+
 end
